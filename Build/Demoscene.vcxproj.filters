@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Source\Pch.cpp" />
+    <ClCompile Include="..\Source\DirectX12.cpp" />
+    <ClCompile Include="..\Source\Library.cpp" />
+    <ClCompile Include="..\Source\External\imgui\imgui.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\imgui\imgui_demo.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\External\imgui\imgui_draw.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\GuiRenderer.cpp" />
+    <ClCompile Include="..\Source\Demoscene.cpp" />
+    <ClCompile Include="..\Source\Tests\PlayWithNoise\PlayWithNoise.cpp">
+      <Filter>Tests\PlayWithNoise</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\DirectX12.h" />
+    <ClInclude Include="..\Source\Pch.h" />
+    <ClInclude Include="..\Source\Library.h" />
+    <ClInclude Include="..\Source\d3dx12.h" />
+    <ClInclude Include="..\Source\GuiRenderer.h" />
+    <ClInclude Include="..\Source\Tests\PlayWithNoise\PlayWithNoise.h">
+      <Filter>Tests\PlayWithNoise</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\TestScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="External">
+      <UniqueIdentifier>{777dd7bc-c510-450c-b653-20a3b578ab80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\imgui">
+      <UniqueIdentifier>{46de0e04-5ab4-4c69-9985-a0a178e2d3ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{c7a9860f-cac6-44b0-9701-36206b067895}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\PlayWithNoise">
+      <UniqueIdentifier>{162a73c8-c3f3-4ec6-80f3-1095f605d8b8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Source\GuiPS.hlsl" />
+    <FxCompile Include="..\Source\GuiVS.hlsl" />
+    <FxCompile Include="..\Source\Tests\PlayWithNoise\SimpleShadingPS.hlsl">
+      <Filter>Tests\PlayWithNoise</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Source\Tests\PlayWithNoise\SimpleTransformVS.hlsl">
+      <Filter>Tests\PlayWithNoise</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Source\GuiCommon.hlsli" />
+  </ItemGroup>
+</Project>
